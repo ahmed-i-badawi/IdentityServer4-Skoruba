@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="HtmlAgilityPack" Version="1.11.40" />
+		<PackageReference Include="IdentityModel" Version="6.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="6.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.TestHost" Version="6.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\src\Skoruba.IdentityServer4.STS.Identity\Skoruba.IdentityServer4.STS.Identity.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Update="FluentAssertions" Version="6.4.0" />
+	</ItemGroup>
+
+</Project>

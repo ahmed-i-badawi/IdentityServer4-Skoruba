@@ -1,0 +1,48 @@
+﻿{
+  "IdentityData": {
+    "Roles": [
+      {
+        "Name": "SkorubaIdentityAdminAdministrator"
+      },
+      {
+        "Name": "Administrator"
+      },
+      {
+        "Name": "Integrator"
+      },  
+      {
+        "Name": "Site"
+      },
+    ],
+    "Users": [
+      {
+        "Username": "identityadmin",
+        "Password": "12!@qwQW",
+        "Email": "identityadmin@test.com",
+        "Roles": [
+          "SkorubaIdentityAdminAdministrator"
+        ],
+        "Claims": [
+          {
+            "Type": "name",
+            "Value": "identityadmin"
+          }
+        ]
+      },
+      {
+        "Username": "admin",
+        "Password": "12!@qwQW",
+        "Email": "admin@test.com",
+        "Roles": [
+          "Administrator"
+        ],
+        "Claims": [
+          {
+            "Type": "name",
+            "Value": "admin"
+          }
+        ]
+      }
+    ]
+  }
+}
