@@ -70,7 +70,18 @@
           "role",
           "name"
         ]
+      },
+      {
+        "Name": "CleanArchitecture.WebUI",
+        "DisplayName": "eServices",
+        "Required": false,
+        "UserClaims": [
+          "name",
+          "email",
+          "role"
+        ]
       }
+
     ],
     "ApiResources": [
       {
@@ -141,8 +152,8 @@
         ]
       },
       {
-        "ClientId": "BlazorServer.Client",
-        "ClientName": "BlazorServer.Client",
+        "ClientId": "BlazorServerClient",
+        "ClientName": "BlazorServer Client",
         "AllowedGrantTypes": [
           "authorization_code"
         ],
@@ -152,18 +163,20 @@
         "RequireConsent": true,
         "RequireClientSecret": false,
         "RedirectUris": [
-          "https://localhost:8010/authentication/login-callback"
+          "https://localhost:7270/signin-oidc"
         ],
         "PostLogoutRedirectUris": [
-          "https://localhost:8010/authentication/logout-callback"
+          "https://localhost:7270/signout-callback-oidc"
         ],
         "AllowedCorsOrigins": [
-          "https://localhost:8010"
+          "https://localhost:7270"
         ],
         "AllowedScopes": [
-          "openid",
           "CleanArchitecture.WebUI",
-          "profile"
+          "openid",
+          "email",
+          "profile",
+          "roles"
         ]
       },
       {
